@@ -5,6 +5,10 @@
  * @param {Function} callback
  */
 function callMeMaybe(callMe, callback) {
+  if (callMe) {
+    callback();
+  }
+
   // Your code here
 }
 

@@ -13,7 +13,11 @@
  * @param {Function} callback
  */
 function map(array, callback) {
+  let newArr = [];
+  for (let i = 0; i < array.length; i++) {
+    newArr[i] = callback(array[i], i);
+  }
+  return newArr;
   // Your code
 }
-
 export default map;

@@ -6,7 +6,7 @@
  * @param {Function} callback
  */
 function sumAsync(x, y, callback) {
-  // Your code here
+  callback(y + x); // Your code here
 }
 
 export default sumAsync;

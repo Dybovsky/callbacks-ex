@@ -5,7 +5,9 @@
  * @param {Function} callback
  */
 function forEach(array, callback) {
-  // Your code
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i], i);
+    // Your code
+  }
 }
-
 export default forEach;
